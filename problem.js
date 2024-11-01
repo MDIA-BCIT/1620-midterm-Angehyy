@@ -16,18 +16,29 @@ CHALLENGE
 
 
 function passwordCheck(password, correctPassword){
+    //if the password is absolutely correct
     if (password === correctPassword) {
         console.log ("Access Granted!");
+    //if password is wrong
      } else if(password !== correctPassword){
         console.log("Access Denied!");
+    // if answer typed in is "forgot"
      } else if (password = "forgot"){
         console.log("Here is a hint");
+    //if answer typed is "reset"
      } else (password = "reset")
         console.log ("Let's reset your account");
     }
+    // correct password
     console.log(passwordCheck (1115, 1115));
+
+    //wrong password
     console.log(passwordCheck(1010, 1115));
+
+    // forgot password
     console.log(passwordCheck ("forgot"));
+
+    //reset password
     console.log(passwordCheck ("reset"));
     
          
