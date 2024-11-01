@@ -13,3 +13,23 @@ CHALLENGE
 - If the password is less than 5 characters, log out "Your password is too short!".
 */
 
+
+
+function passwordCheck(password, correctPassword){
+    if (password === correctPassword) {
+        console.log ("Access Granted!");
+     } else if(password !== correctPassword){
+        console.log("Access Denied!");
+     } else if (password = "forgot"){
+        console.log("Here is a hint");
+     } else (password = "reset")
+        console.log ("Let's reset your account");
+    }
+    console.log(passwordCheck (1115, 1115));
+    console.log(passwordCheck(1010, 1115));
+    console.log(passwordCheck ("forgot"));
+    console.log(passwordCheck ("reset"));
+    
+         
+         
+         
